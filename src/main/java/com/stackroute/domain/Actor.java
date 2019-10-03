@@ -1,5 +1,7 @@
 package com.stackroute.domain;
 
+import org.springframework.stereotype.Component;
+
 public class Actor {
     private String name;
     private String gender;
@@ -39,7 +41,9 @@ public class Actor {
 
 
 
-
+    public void getInfo(){
+        System.out.println("You are in Actor");
+    }
     
 
 
