@@ -26,9 +26,9 @@ public class Main
 
         ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
 
-        Actor actor1 = context.getBean(Actor.class);
-        actor1.setName("aman");
-        actor1.setAge(20);
+//        Actor actor1 = context.getBean(Actor.class);
+//        actor1.setName("saurav");
+//        actor1.setAge(20);
 
 
         Movie movie = context.getBean(Movie.class);

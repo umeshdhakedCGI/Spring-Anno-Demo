@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -20,6 +21,7 @@ public class Actor {
         return name;
     }
 
+    @Value("aman")
     public void setName(String name) {
         this.name = name;
     }
@@ -28,6 +30,7 @@ public class Actor {
         return age;
     }
 
+    @Value("25")
     public void setAge(int age) {
         this.age = age;
     }
@@ -36,6 +39,7 @@ public class Actor {
         return gender;
     }
 
+    @Value("malea")
     public void setGender(String gender) {
         this.gender = gender;
     }
