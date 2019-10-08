@@ -8,11 +8,13 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 
-public class Movie implements ApplicationContextAware {
+public class Movie {
 
     @Autowired
     private Actor actor;
-    ApplicationContext context1 = null;
+
+    private Actor actor1;
+
 
     public Movie(){}
 
@@ -34,14 +36,14 @@ public class Movie implements ApplicationContextAware {
 
         actor.getInfo();
     }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-
-        this.context1 = applicationContext;
-
+//
+//    @Override
+//    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+//
+//        this.context1 = applicationContext;
+//
 //        Actor app= context1.getBean(Actor.class);
 //        app.setAge(50);
 //        System.out.println("lol");
-    }
+//    }
 }
